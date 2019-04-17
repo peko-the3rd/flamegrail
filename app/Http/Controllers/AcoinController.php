@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Config;
-
+use App;
 /**
  * amazonコイン表示用コントローラー.
  *
@@ -25,13 +25,14 @@ class AcoinController extends Controller
      */
 	public function __construct() {
         parent::__construct();
-        $this->file = file_get_contents(storage_path()."/amazon_coin_data.csv", "r");
+        $this->file = file_get_contents(Config::get('const.ACD_CSV'), "r");
     }
 
     /**
      * 初期表示
      */
     public function index() {
+        //var_dump(env('APP_ENV'));
         $rows = explode("\n", $this->file);// 行分割
         $rows = array_filter($rows, 'strlen'); // 文字数が0の行を取り除く
         $convert_rows = [];
