@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4731429c7f25ab92eaa813447a972209",
+    "content-hash": "98c6db199f34725e4c5b8d926fdeb5ad",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -461,16 +461,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.11",
+            "version": "v5.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "a2cf7a7983329d63edc6fde43142b232bb61aa0a"
+                "reference": "6dd75b67811a265c57144ab15f25a8061ed4721f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/a2cf7a7983329d63edc6fde43142b232bb61aa0a",
-                "reference": "a2cf7a7983329d63edc6fde43142b232bb61aa0a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/6dd75b67811a265c57144ab15f25a8061ed4721f",
+                "reference": "6dd75b67811a265c57144ab15f25a8061ed4721f",
                 "shasum": ""
             },
             "require": {
@@ -604,7 +604,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-04-10T13:05:18+00:00"
+            "time": "2019-04-16T13:47:32+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1397,6 +1397,59 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "v3.1.33",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "dd55b23121e55a3b4f1af90a707a6c4e5969530f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/dd55b23121e55a3b4f1af90a707a6c4e5969530f",
+                "reference": "dd55b23121e55a3b4f1af90a707a6c4e5969530f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "libs/bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2018-09-12T20:54:16+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

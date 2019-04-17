@@ -17,6 +17,28 @@ $app = new Illuminate\Foundation\Application(
 
 /*
 |--------------------------------------------------------------------------
+| 環境によって読み込む.envファイル切り替え
+|--------------------------------------------------------------------------
+*/
+switch ($_SERVER['SERVER_NAME'] ?? 'localhost') {
+    case 'localhost':
+        $app->loadEnvironmentFrom('.env');
+        break;
+    case '127.0.0.1':
+        $app->loadEnvironmentFrom('.env.dev');
+        break;
+    case 'laravel.test':
+        $app->loadEnvironmentFrom('.env.dev');
+        break;
+    case 'staging.co.jp':
+        $app->loadEnvironmentFrom('.env.stg');
+        break;
+    case 'flameliger.com':
+        $app->loadEnvironmentFrom('.env.prod');
+        break;
+}
+/*
+|--------------------------------------------------------------------------
 | Bind Important Interfaces
 |--------------------------------------------------------------------------
 |

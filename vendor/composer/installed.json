@@ -758,17 +758,17 @@
     },
     {
         "name": "laravel/framework",
-        "version": "v5.8.11",
-        "version_normalized": "5.8.11.0",
+        "version": "v5.8.12",
+        "version_normalized": "5.8.12.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/framework.git",
-            "reference": "a2cf7a7983329d63edc6fde43142b232bb61aa0a"
+            "reference": "6dd75b67811a265c57144ab15f25a8061ed4721f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/a2cf7a7983329d63edc6fde43142b232bb61aa0a",
-            "reference": "a2cf7a7983329d63edc6fde43142b232bb61aa0a",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/6dd75b67811a265c57144ab15f25a8061ed4721f",
+            "reference": "6dd75b67811a265c57144ab15f25a8061ed4721f",
             "shasum": ""
         },
         "require": {
@@ -871,7 +871,7 @@
             "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^1.1).",
             "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
         },
-        "time": "2019-04-10T13:05:18+00:00",
+        "time": "2019-04-16T13:47:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3170,6 +3170,61 @@
         ],
         "description": "Library that helps with managing the version number of Git-hosted PHP projects",
         "homepage": "https://github.com/sebastianbergmann/version"
+    },
+    {
+        "name": "smarty/smarty",
+        "version": "v3.1.33",
+        "version_normalized": "3.1.33.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/smarty-php/smarty.git",
+            "reference": "dd55b23121e55a3b4f1af90a707a6c4e5969530f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/smarty-php/smarty/zipball/dd55b23121e55a3b4f1af90a707a6c4e5969530f",
+            "reference": "dd55b23121e55a3b4f1af90a707a6c4e5969530f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "time": "2018-09-12T20:54:16+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "libs/bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Monte Ohrt",
+                "email": "monte@ohrt.com"
+            },
+            {
+                "name": "Uwe Tews",
+                "email": "uwe.tews@googlemail.com"
+            },
+            {
+                "name": "Rodney Rehm",
+                "email": "rodney.rehm@medialize.de"
+            }
+        ],
+        "description": "Smarty - the compiling PHP template engine",
+        "homepage": "http://www.smarty.net",
+        "keywords": [
+            "templating"
+        ]
     },
     {
         "name": "swiftmailer/swiftmailer",
